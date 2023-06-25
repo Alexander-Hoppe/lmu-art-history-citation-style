@@ -32,7 +32,7 @@
   </locale>
   <macro name="author">
     <names variable="author" font-variant="normal" delimiter=" ; ">
-      <name font-variant="normal" delimiter=" ; " delimiter-precedes-last="always" name-as-sort-order="all"/>
+        <name font-variant="normal" delimiter="/" delimiter-precedes-last="always" name-as-sort-order="all"/>
       <label form="short" prefix=" (" suffix=")"/>
     </names>
   </macro>
