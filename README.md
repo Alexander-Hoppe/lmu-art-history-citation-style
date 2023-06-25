@@ -8,6 +8,6 @@ A collection of helpful links
 [Collection of available styles published by the university library](https://www.en.ub.uni-muenchen.de/writing/reference_management/citavi/citavi-citations-styles/index.html)
 
 ### General
-[Visual Citation Style Language (CSL) editor](https://www.en.ub.uni-muenchen.de/writing/reference_management/citavi/citavi-citations-styles/index.html)
+[Visual Citation Style Language (CSL) editor](https://editor.citationstyles.org/visualEditor/)
 
-[CSL Primer](https://www.en.ub.uni-muenchen.de/writing/reference_management/citavi/citavi-citations-styles/index.html)
+[CSL Primer](https://docs.citationstyles.org/en/stable/primer.html)
