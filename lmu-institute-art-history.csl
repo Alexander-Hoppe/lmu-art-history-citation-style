@@ -4,21 +4,25 @@
     <title>LMU-Institute-Art-History</title>
     <id>http://www.zotero.org/styles/lmu-institute-art-history</id>
     <link href="http://www.zotero.org/styles/lmu-institute-art-history" rel="self"/>
-    <link href="http://www.bui.haw-hamburg.de/fileadmin/redaktion/diplom/Lorenzen__litverz.pdf" rel="documentation"/>
-    <link href="http://bibliothek.fh-potsdam.de/fileadmin/fhp_bib/dokumente/Schulungen/wissenschaftliches_Arbeiten/Zitieren_Lorenzen.pdf" rel="documentation"/>
-    <link href="http://www.uni-muenster.de/imperia/md/content/fachbereich_physik/didaktik_physik/materialien/materialschlichting/zitierregeln.pdf" rel="documentation"/>
-    <link href="http://forums.zotero.org/discussion/1857" rel="documentation"/>
     <link href="https://github.com/citation-style-language/styles/blob/master/din-1505-2.csl" rel="Base style"/>
     <author>
       <name>Karl-Alexander Hamilton Hoppe</name>
       <email>alexander.hoppe@tum.de</email>
       <uri>https://github.com/Alexander-Hoppe</uri>
     </author>
+    <contributor>
+      <name>Sven Rothe</name>
+      <email>mmoole@googlemail.com</email>
+    </contributor>
+    <contributor>
+      <name>Julian Onions</name>
+      <email>julian.onions@gmail.com</email>
+    </contributor>
     <category citation-format="author-date"/>
     <category field="generic-base"/>
     <summary>Style based on DIN-1505-2</summary>
     <updated>2023-06-25T17:30:49+00:00</updated>
-    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Zero v1.0 Universal License</rights>
+    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="de">
     <terms>
