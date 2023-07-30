@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="de-DE">
+  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
     <title>LMU-Institute-Art-History</title>
     <id>http://www.zotero.org/styles/lmu-institute-art-history</id>
@@ -8,7 +9,6 @@
     <link href="http://bibliothek.fh-potsdam.de/fileadmin/fhp_bib/dokumente/Schulungen/wissenschaftliches_Arbeiten/Zitieren_Lorenzen.pdf" rel="documentation"/>
     <link href="http://www.uni-muenster.de/imperia/md/content/fachbereich_physik/didaktik_physik/materialien/materialschlichting/zitierregeln.pdf" rel="documentation"/>
     <link href="http://forums.zotero.org/discussion/1857" rel="documentation"/>
-    <link href="https://github.com/citation-style-language/styles/blob/master/din-1505-2.csl" rel="Base style"/>
     <author>
       <name>Karl-Alexander Hamilton Hoppe</name>
       <email>alexander.hoppe@tum.de</email>
@@ -17,8 +17,9 @@
     <category citation-format="author-date"/>
     <category field="generic-base"/>
     <summary>Style based on DIN-1505-2</summary>
-    <updated>2023-06-25T17:30:49+00:00</updated>
+    <updated>2023-07-30T15:29:37+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Zero v1.0 Universal License</rights>
+    <link href="https://github.com/citation-style-language/styles/blob/master/din-1505-2.csl" rel="Base style"/>
   </info>
   <locale xml:lang="de">
     <terms>
@@ -32,7 +33,7 @@
   </locale>
   <macro name="author">
     <names variable="author" font-variant="normal" delimiter=" ; ">
-        <name font-variant="normal" delimiter="/" delimiter-precedes-last="always" name-as-sort-order="all"/>
+      <name font-variant="normal" delimiter="/" delimiter-precedes-last="always" name-as-sort-order="all"/>
       <label form="short" prefix=" (" suffix=")"/>
     </names>
   </macro>
@@ -111,7 +112,7 @@
         </group>
       </if>
       <else-if type="book graphic legal_case motion_picture report song" match="any">
-        <text variable="title" font-style="italic"/>
+        <text variable="title" font-style="normal"/>
       </else-if>
       <else>
         <text variable="title" font-style="normal"/>
@@ -196,7 +197,7 @@
     </group>
   </macro>
   <macro name="bibliography-year">
-    <date variable="issued" form="numeric" date-parts="year"/>
+    <date date-parts="year" form="numeric" variable="issued" suffix="."/>
     <text variable="year-suffix"/>
   </macro>
   <macro name="locator">
@@ -271,12 +272,10 @@
           <text prefix=". " macro="edition"/>
           <text prefix=". " macro="medium"/>
           <text prefix=". " macro="dimensions"/>
-          <text prefix=". " variable="publisher-place"/>
-          <text prefix=" : " variable="publisher"/>
-          <text macro="bibliography-year" prefix=", "/>
+          <text variable="publisher-place" strip-periods="false" prefix=". "/>
+          <text macro="bibliography-year" prefix=" "/>
           <text prefix=" – " macro="scale"/>
           <text prefix=". — " variable="note"/>
-          <text prefix=" — ISBN " variable="ISBN"/>
         </if>
         <else-if type="chapter paper-conference" match="any">
           <text prefix=" " macro="title" suffix="."/>
@@ -303,7 +302,7 @@
           <text prefix=". " variable="publisher-place"/>
           <text prefix=", " variable="publisher" form="long"/>
           <text prefix=", " macro="genre"/>
-          <text macro="bibliography-year" prefix=", "/>
+          <text macro="bibliography-year" prefix=" "/>
           <text prefix=". — " variable="note"/>
         </else-if>
         <else-if type="webpage post post-weblog" match="any">
