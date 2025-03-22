@@ -17,7 +17,7 @@
     <category citation-format="author-date"/>
     <category field="generic-base"/>
     <summary>Style based on DIN-1505-2</summary>
-    <updated>2023-07-30T15:29:37+00:00</updated>
+    <updated>2025-03-22T10:04:08+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Zero v1.0 Universal License</rights>
     <link href="https://github.com/citation-style-language/styles/blob/master/din-1505-2.csl" rel="Base style"/>
   </info>
@@ -74,7 +74,7 @@
   </macro>
   <macro name="author-short">
     <names variable="author">
-      <name form="short" and="symbol" delimiter=", " initialize-with=". " delimiter-precedes-last="never" font-variant="small-caps"/>
+      <name form="short" font-variant="normal" delimiter="/" delimiter-precedes-last="never" initialize-with=". "/>
       <et-al font-variant="normal"/>
       <substitute>
         <names variable="editor" font-variant="small-caps"/>
@@ -218,7 +218,7 @@
       <key macro="author"/>
       <key variable="issued"/>
     </sort>
-    <layout prefix="(" suffix=")" delimiter="; ">
+    <layout font-style="normal" font-variant="normal" font-weight="normal" text-decoration="none" vertical-align="baseline" delimiter="; " suffix=", S. .">
       <choose>
         <if type="bill legislation" match="any">
           <group delimiter=" ">
@@ -235,7 +235,7 @@
           </group>
         </if>
         <else>
-          <group delimiter=", ">
+          <group delimiter=" ">
             <text macro="author-short"/>
             <text macro="cite-year"/>
             <text macro="locator"/>
