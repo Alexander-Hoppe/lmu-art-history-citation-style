@@ -17,7 +17,7 @@
     <category citation-format="author-date"/>
     <category field="generic-base"/>
     <summary>Style based on DIN-1505-2</summary>
-    <updated>2025-03-22T10:04:08+00:00</updated>
+    <updated>2025-04-17T17:28:21+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Zero v1.0 Universal License</rights>
     <link href="https://github.com/citation-style-language/styles/blob/master/din-1505-2.csl" rel="Base style"/>
   </info>
@@ -152,7 +152,7 @@
   <macro name="pages">
     <choose>
       <if type="chapter paper-conference article-journal" match="any">
-        <label variable="page" form="short" suffix=" "/>
+        <label suffix=" " variable="page" form="short"/>
         <text variable="page"/>
       </if>
     </choose>
@@ -218,7 +218,7 @@
       <key macro="author"/>
       <key variable="issued"/>
     </sort>
-    <layout font-style="normal" font-variant="normal" font-weight="normal" text-decoration="none" vertical-align="baseline" delimiter="; " suffix=", S. .">
+    <layout font-style="normal" font-variant="normal" font-weight="normal" text-decoration="none" vertical-align="baseline" delimiter="; " suffix=".">
       <choose>
         <if type="bill legislation" match="any">
           <group delimiter=" ">
@@ -235,8 +235,8 @@
           </group>
         </if>
         <else>
-          <group delimiter=" ">
-            <text macro="author-short"/>
+          <group>
+            <text macro="author-short" suffix=" "/>
             <text macro="cite-year"/>
             <text macro="locator"/>
           </group>
@@ -248,6 +248,7 @@
   <bibliography hanging-indent="true" et-al-min="9" et-al-use-first="8">
     <sort>
       <key macro="author"/>
+      <key macro="editor"/>
       <key variable="issued"/>
       <key variable="title"/>
     </sort>
